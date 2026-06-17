@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+  background-color: #1a1a1a;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  color: #f5c842;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f5c842;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1400') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.hero-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 35px;
+  font-weight: 300;
+}
+
+.btn {
+  background-color: #f5c842;
+  color: #1a1a1a;
+  padding: 14px 36px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #e0b020;
+}
+
+/* ABOUT */
+.about {
+  padding: 80px 60px;
+  text-align: center;
+  background-color: #fffdf5;
+}
+
+.about h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* MENU */
+.menu {
+  padding: 80px 60px;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+
+.menu h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: #f5c842;
+  margin-bottom: 50px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #2a2a2a;
+  border-radius: 16px;
+  padding: 30px 20px;
+  color: #fff;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #f5c842;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #aaa;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.card span {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* CONTACT */
+.contact {
+  padding: 80px 60px;
+  text-align: center;
+  background-color: #fffdf5;
+}
+
+.contact h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  color: #1a1a1a;
+}
+
+.contact p {
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+  color: #555;
+}
+
+/* FOOTER */
+footer {
+  background-color: #1a1a1a;
+  color: #aaa;
+  text-align: center;
+  padding: 25px;
+  font-size: 0.9rem;
+}
