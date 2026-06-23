@@ -7,6 +7,9 @@ This repository contains all tasks completed during my **Web Development & Desig
 | Task | Description | Tech Stack |
 |------|-------------|------------|
 | [Task 1 - Landing Page](./Task1-LandingPage) | A responsive cafe landing page for "Brewed Bliss" with hero, menu, and contact sections. | HTML, CSS |
+| [Task 2 - Portfolio](./Task2-Portfolio) | A personal portfolio website with dark terminal theme, smooth scroll animations, and sections for about, education, skills, projects, certifications, and contact. | HTML, CSS |
+
+
 
 ## 🛠️ Tools Used
 
