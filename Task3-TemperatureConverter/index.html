@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Temperature Converter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="bg-blobs">
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+  </div>
+
+  <div class="container">
+
+    <header>
+      <div class="logo">🌡️</div>
+      <h1>Temperature Converter</h1>
+      <p class="subtitle">Convert between Celsius, Fahrenheit & Kelvin instantly</p>
+    </header>
+
+    <div class="card">
+
+      <!-- INPUT -->
+      <div class="input-group">
+        <label for="tempInput">Enter Temperature</label>
+        <div class="input-wrap">
+          <input type="number" id="tempInput" placeholder="e.g. 100" />
+          <span class="input-icon">°</span>
+        </div>
+        <span class="error-msg" id="errorMsg">⚠ Please enter a valid number</span>
+      </div>
+
+      <!-- UNIT SELECT -->
+      <div class="unit-group">
+        <label>Convert From</label>
+        <div class="radio-row">
+          <label class="radio-card">
+            <input type="radio" name="unit" value="celsius" checked/>
+            <span class="radio-box">
+              <span class="radio-label">°C</span>
+              <span class="radio-name">Celsius</span>
+            </span>
+          </label>
+          <label class="radio-card">
+            <input type="radio" name="unit" value="fahrenheit"/>
+            <span class="radio-box">
+              <span class="radio-label">°F</span>
+              <span class="radio-name">Fahrenheit</span>
+            </span>
+          </label>
+          <label class="radio-card">
+            <input type="radio" name="unit" value="kelvin"/>
+            <span class="radio-box">
+              <span class="radio-label">K</span>
+              <span class="radio-name">Kelvin</span>
+            </span>
+          </label>
+        </div>
+      </div>
+
+      <!-- BUTTON -->
+      <button class="convert-btn" onclick="convert()">
+        <span>Convert</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+
+      <!-- RESULTS -->
+      <div class="results" id="results">
+        <div class="result-card" id="res-celsius">
+          <div class="result-unit">°C</div>
+          <div class="result-value" id="val-celsius">—</div>
+          <div class="result-name">Celsius</div>
+        </div>
+        <div class="result-card" id="res-fahrenheit">
+          <div class="result-unit">°F</div>
+          <div class="result-value" id="val-fahrenheit">—</div>
+          <div class="result-name">Fahrenheit</div>
+        </div>
+        <div class="result-card" id="res-kelvin">
+          <div class="result-unit">K</div>
+          <div class="result-value" id="val-kelvin">—</div>
+          <div class="result-name">Kelvin</div>
+        </div>
+      </div>
+
+      <!-- FORMULA -->
+      <div class="formula-box" id="formulaBox">
+        <span class="formula-label">Formula used:</span>
+        <span class="formula-text" id="formulaText">—</span>
+      </div>
+
+    </div>
+
+    <!-- REFERENCE -->
+    <div class="reference">
+      <h3>Quick Reference</h3>
+      <div class="ref-grid">
+        <div class="ref-item">
+          <span class="ref-name">Water Boils</span>
+          <span class="ref-vals">100°C · 212°F · 373K</span>
+        </div>
+        <div class="ref-item">
+          <span class="ref-name">Body Temp</span>
+          <span class="ref-vals">37°C · 98.6°F · 310K</span>
+        </div>
+        <div class="ref-item">
+          <span class="ref-name">Water Freezes</span>
+          <span class="ref-vals">0°C · 32°F · 273K</span>
+        </div>
+        <div class="ref-item">
+          <span class="ref-name">Absolute Zero</span>
+          <span class="ref-vals">-273°C · -459°F · 0K</span>
+        </div>
+      </div>
+    </div>
+
+    <footer>Built by R Prithivika</footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
